@@ -36,10 +36,9 @@ text-align: center;
 
 .main img{
 	
-	transform: rotate(90deg);
-	float:left; 
-	height: 170%;
-	width: 170%;
+	transform: rotate(90deg); 
+	height: 10%;
+	width: 10%;
 	color: Black;
 	
 }
