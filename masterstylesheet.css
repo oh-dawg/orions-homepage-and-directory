@@ -2,6 +2,12 @@ body {
 	background-color: Teal;
 }
 
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  padding:20px;
+  text-align: center;
+}
+
 .TitleBar {
   overflow: hidden;
   background-color: #333;
@@ -11,7 +17,13 @@ body {
   text-align: center;
 }
 
-.myImage{
+.TitleBar p{
+
+text-align: center;
+	
+}
+
+.main img{
 	
 	transform: rotate(90deg);
 	float:left; 
@@ -19,14 +31,10 @@ body {
 	
 }
 
-.theCaption{
+.main figcaption{
 	
 	width: 170%;
+	color: black;
 	
 }
 
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
-  padding:20px;
-  text-align: center;
-}
