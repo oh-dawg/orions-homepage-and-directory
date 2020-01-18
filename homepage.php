@@ -33,6 +33,10 @@
    <p> I enjoy hiking, camping, and the great outdoors.</p>   
    <br>
    
+   <?php
+   print date("l, F j, Y h:m:s a", strtotime("+8 hours"));
+   ?>
+   
    </div>
    
    <div class="rightsidenav">
