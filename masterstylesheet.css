@@ -11,7 +11,7 @@ body {
   text-align: center;
 }
 
-myImage{
+.myImage{
 	
 	transform: rotate(90deg);
 	float:left; 
@@ -19,7 +19,7 @@ myImage{
 	
 }
 
-theCaption{
+.theCaption{
 	
 	width: 170%;
 	
