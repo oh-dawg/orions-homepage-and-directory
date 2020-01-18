@@ -1,5 +1,5 @@
 body {
-	background-color: Teal;
+	background-color: Green;
 }
 
 .main {
@@ -10,7 +10,6 @@ body {
 
 .TitleBar {
   overflow: hidden;
-  background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -28,13 +27,14 @@ text-align: center;
 	transform: rotate(90deg);
 	float:left; 
 	width: 55%;
+	color: Black;
 	
 }
 
 .main figcaption{
 	
 	width: 170%;
-	color: black;
+	color: Black;
 	
 }
 
