@@ -1,5 +1,5 @@
 body {
-	background-color: Green;
+	background-color: Teal;
 }
 
 .main {
@@ -22,6 +22,18 @@ text-align: center;
 	
 }
 
+.leftsidenav {
+  height: 80%; /* Full-height: remove this if you want "auto" height */
+  width: 167px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  bottom: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  font-size: 20px;
+}
+
 .main img{
 	
 	transform: rotate(90deg);
@@ -36,9 +48,5 @@ text-align: center;
 	width: 170%;
 	color: Black;
 	
-}
-
-.TitleBar {
-    text-align: center;
 }
 
