@@ -34,8 +34,10 @@
    <br>
    
    <?php
-   print date("l, F j, Y h:m:s a", strtotime("+8 hours"));
+   print date("l, F j, Y h:m:s a" );
    ?>
+   
+   <!--strtotime("+8 hours")-->
    
    </div>
    
