@@ -34,7 +34,7 @@
    <br>
    
    <?php
-   print date("l, F j, Y h:m:s a", strtotime("-7 hours") );
+   print date("l, F j, Y");
    ?>
    
    <!--strtotime("+8 hours")-->
