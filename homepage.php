@@ -4,6 +4,7 @@
    
    <title>homepage</title>
    <link rel="stylesheet" type="text/css" href="masterstylesheet.css">
+   <script type="text/javascript" src="homepageJS.js"></script>
    
 </head>
    <body>
@@ -41,9 +42,9 @@
    ?>
    <br>
  
-	  <img id="imageSpot" src="galenaCoverUp.jpg">
+	  <img id="imageSpot" src="galena.jpg">
 	  
-	  <button onclick="document.getElementById('imageSpot').src='galena.jpg'">Click Me for an idaho landscape!</button>
+	  <button onclick="changeImage">Click Me for an idaho landscape!</button>
    
    </div>
    
