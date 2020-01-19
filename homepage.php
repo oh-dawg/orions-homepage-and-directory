@@ -44,9 +44,9 @@
    ?>
    <br>
  
-      <figure id="imageDiv" style="display:block">
+      <div class="imageDiv" style="display:none">
 	  <img class="imageSpot" src="northtrees.jpg" width="50%" height="50%">
-	  </figure>
+	  </div>
 	  
 	  <button onclick="changeImage()">Click Me for an idaho landscape!</button>
    
