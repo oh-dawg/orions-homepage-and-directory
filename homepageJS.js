@@ -1,9 +1,9 @@
 function changeImage(){
-if( document.getElementByClassName('imageDiv').style.display == "none" ) 
+if( document.getElementById('imageDiv').style.display == "none" ) 
 {
-    document.getElementByClassName('imageDiv').style.visibility="block";
+    document.getElementById('imageDiv').style.visibility="block";
 } else 
   {
-   document.getElementByClassName('imageDiv').style.visibility="none";
+   document.getElementById('imageDiv').style.visibility="none";
   }
 }
