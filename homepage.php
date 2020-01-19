@@ -42,7 +42,7 @@
    ?>
    <br>
  
-	  <img id="imageSpot" src="galena.jpg">
+	  <img id="imageSpot" src="galena.jpg" style="visibility:hidden">
 	  
 	  <button onclick="changeImage">Click Me for an idaho landscape!</button>
    
