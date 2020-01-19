@@ -41,7 +41,9 @@ text-align: center;
 
 .myImage{
 	
-	float: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	transform: rotate(90deg); 
 	height: 10%;
 	width: 10%;

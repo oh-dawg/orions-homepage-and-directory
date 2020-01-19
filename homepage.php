@@ -40,12 +40,10 @@
    print date("l, F j, Y h:i:sa");
    ?>
    <br>
-   
-   
-   <button  onclick = "document.getElementById('imageSpot').src='galena.jpg'">Click Me for an idaho landscape!
-      </button>
-	  
+ 
 	  <img id="imageSpot" src="galenaCoverUp.jpg">
+	  
+	  <button onclick="document.getElementById('imageSpot').src='galena.jpg'">Click Me for an idaho landscape!</button>
    
    </div>
    
