@@ -44,11 +44,12 @@
    ?>
    <br>
  
-      <div class="imageDiv" style="display:none">
+	<!-- style="display:none" -->
+      <div class="imageDiv" >
 	  <img class="imageSpot" src="northtrees.jpg" width="50%" height="50%">
 	  </div>
 	  
-	  <button onclick="changeImage()">Click Me for an idaho landscape!</button>
+	  <!-- <button onclick="changeImage()">Click Me for an idaho landscape!</button>-->
    
    </div>
    
