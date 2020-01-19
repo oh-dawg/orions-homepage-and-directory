@@ -33,11 +33,20 @@
    <p> I enjoy hiking, camping, and the great outdoors.</p>   
    <br>
    
+   <!--php l, day, F month, j, dont know, Y year, H hour, i minute, sa seconds-->
+   
    <?php
-   print date("l, F j, Y");
+   date_default_timezone_set("America/Idaho");
+   print date("l, F j, Y h:i:sa");
    ?>
    
-   <!--strtotime("+8 hours")-->
+   
+   
+   <button id="picButton" name="Click me!" type="button"
+      onclick = "document.getElementById('imageSpot').strc='galena.jpg'">Click Me for an idaho landscape!
+      </button>
+	  
+	  <img id="imageSpot" src="galenaCoverUp.jpg">
    
    </div>
    
