@@ -1,6 +1,6 @@
 function changeImage(){
-if( document.getElementById('imageSpot').style.visibility == "hidden" ) {
-    document.getElementById('imageSpot').style.visibility="visible";
+if( document.getElementById('imageDiv').style.display == "none" ) {
+    document.getElementById('imageDiv').style.visibility="block";
 } else {
-   document.getElementById('imageSpot').style.visibility="hidden";
+   document.getElementById('imageDiv').style.visibility="none";
 }
