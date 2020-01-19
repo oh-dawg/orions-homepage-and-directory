@@ -45,11 +45,13 @@
    <br>
  
 	<!-- style="display:none" -->
-      <div class="imageDiv" >
-	  <img class="imageSpot" src="northtrees.jpg" width="50%" height="50%">
+      <div class="imageDiv" style="display:none">
+	  <!--<img class="imageSpot" src="northtrees.jpg" width="50%" height="50%">-->
+	  <p> for some reason my image wouldnt load so #trees trees trees trees trees trees</p>
+	  
 	  </div>
 	  
-	  <!-- <button onclick="changeImage()">Click Me for an idaho landscape!</button>-->
+	  <button onclick="changeImage()">Click Me for an idaho landscape!</button>
    
    </div>
    
