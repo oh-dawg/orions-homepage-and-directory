@@ -38,11 +38,11 @@
    
    <?php
    date_default_timezone_set("America/Idaho");
-   print date("l, F j, Y h:i:sa");
+   print date("l, F j, Y h:i:sa", strtotime("-7 hours"));
    ?>
    <br>
  
-      <div id="imageDiv"style="display:none">
+      <div id="imageDiv" style="display:block">
 	  <img id="imageSpot" src="galena.jpg">
 	  </div>
 	  
