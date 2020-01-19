@@ -24,7 +24,7 @@
    <div class="main">
    
    <figure class="myImage">
-      <img src="photoOfMe.jpg" width="175" height="140">
+      <img src="photoOfMe.jpg" width="50%" height="50%">
       </figure>
    
    <p> My name is Orion Christensen.</p>
@@ -43,7 +43,7 @@
    <br>
  
       <div id="imageDiv" style="display:block">
-	  <img id="imageSpot" src="galena.jpg">
+	  <img id="imageSpot" src="galena.jpg" width="50%" height "50%">
 	  </div>
 	  
 	  <button onclick="changeImage">Click Me for an idaho landscape!</button>
