@@ -41,15 +41,10 @@ text-align: center;
 
 .myImage{
 	
+	float: center;
 	transform: rotate(90deg); 
 	height: 10%;
 	width: 10%;
-	color: Black;
-	
-}
-
-.main figcaption{
-
 	color: Black;
 	
 }

@@ -23,7 +23,7 @@
    <div class="main">
    
    <figure class="myImage">
-      <img src="photoOfMe.jpg" width="175" height="140"><figcaption class="theCaption">Orion in repose</figcaption>
+      <img src="photoOfMe.jpg" width="175" height="140">
       </figure>
    
    <p> My name is Orion Christensen.</p>
@@ -39,11 +39,10 @@
    date_default_timezone_set("America/Idaho");
    print date("l, F j, Y h:i:sa");
    ?>
+   <br>
    
    
-   
-   <button id="picButton" name="Click me!" type="button"
-      onclick = "document.getElementById('imageSpot').strc='galena.jpg'">Click Me for an idaho landscape!
+   <button  onclick = "document.getElementById('imageSpot').src='galena.jpg'">Click Me for an idaho landscape!
       </button>
 	  
 	  <img id="imageSpot" src="galenaCoverUp.jpg">
