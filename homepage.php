@@ -34,8 +34,6 @@
    <p> I live in Idaho, USA</p>
    <br>
    <p> I enjoy hiking, camping, and the great outdoors.</p> 
-   <br>   
-   <p> heroku confuses me.</p> 
    
    <br>
    
