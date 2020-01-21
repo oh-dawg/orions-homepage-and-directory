@@ -33,7 +33,10 @@
    <br>
    <p> I live in Idaho, USA</p>
    <br>
-   <p> I enjoy hiking, camping, and the great outdoors.</p>   
+   <p> I enjoy hiking, camping, and the great outdoors.</p> 
+   <br>   
+   <p> heroku confuses me.</p> 
+   
    <br>
    
    <!--php l, day, F month, j, dont know, Y year, H hour, i minute, sa seconds-->
