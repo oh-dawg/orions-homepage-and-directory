@@ -1,16 +1,29 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
    <head>
-   <title>shoppingcart</title>
+   <title>BrowsingPage</title>
    <link rel="stylesheet" type="text/css" href="masterstylesheet.css">
    <script type="text/javascript" src="shoppingcartJavascript.js"></script>
    
    </head>
    <body>
    
-   <a href="directory.html">back to browsing page</a>
-   <a href="checkout.html">checkout</a>
+   <a href="directory.html">back to directory</a>
+   <a href="shoppingcart.html">view Shopping cart</a>
    
+   <?php
+   
+   $_SESSION["boughtWidgets"] = 0;
+   $_SESSION["boughtGizmos"] = 0;
+   $_SESSION["boughtWhatzit"] = 0;
+   $_SESSION["boughtInfindibulator"] = 0;
+   
+   ?>
    
    <form id="salesForm" action="undefined">
       
