@@ -44,7 +44,7 @@
          <tr>
             <td> Widget</td>
             <td> $10.00</td>
-            <td><input id="widget" type="checkbox" name="item_1" value="10" onclick="widgetCost(this)"></td>
+            <td><?php echo "widgets " . $_SESSION["boughtWidgets"] ?> </td>
          </tr>
          <tr>
             <td>Gizmo</td>

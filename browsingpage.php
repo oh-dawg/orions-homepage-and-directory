@@ -25,7 +25,7 @@ session_start();
    
    ?>
    
-   <form id="salesForm" action="undefined">
+   <form id="salesForm" method= "post" action="shoppingcart.php">
       
       <!--<p id="blankWarning" style="display:none"> fields can not be left blank </p>
       
