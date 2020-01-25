@@ -57,53 +57,29 @@ session_start();
          <tr>
             <td> Widget</td>
             <td> $10.00</td>
-            <td><input id="widget" type="checkbox" name="item_1" value="10" onclick="widgetCost(this)"></td>
+            <td><input id="widget" type="text" name="widget" <?php $_SESSION["boughtWidgets"]= $_POST['widget'] echo "bought wigets" $boughtWidgets?> ></td>
          </tr>
          <tr>
             <td>Gizmo</td>
             <td> $15.00</td>
-            <td><input id="gizmo" type="checkbox" name="item_2" value="15" onclick="gizmoCost(this)"></td>
+            <td><input id="gizmo" type="text" name="gizmo" <?php $_SESSION["boughtGizmos"]= $_POST['gizmo']?> ></td>
          </tr>
          <tr>
             <td>whatzit</td>
             <td> $20.00</td>
-            <td><input id="whatzit" type="checkbox" name="item_3" value="20" onclick="whatzitCost(this)"></td>
+            <td><input id="whatzit" type="text" name="whatzit" <?php $_SESSION["boughtWhatzit"]= $_POST['whatzit']?> ></td>
          </tr>
          <tr>
             <td>InfinDibulator</td>
             <td> $25.00</td>
-            <td><input id="infindibulator" type="checkbox" name="item_4" value="25" onclick="infindibulatorCost(this)"></td>
+            <td><input id="infindibulator" type="text" name="infindibulator" <?php $_SESSION["boughtInfindibulator"]= $_POST['infindibulator']?> ></td>
          </tr>
       </table>
       <br>
-      total:<br>
-      <input id="total" type="text" name="total" readonly onmouseover="total()">
-      <br>
-      <br>
-      Credit card input:
-      <br>
-      <input type="radio" name="card_type" value="value 1" checked> Visa<br>
-      <input type="radio" name="card_type" value="value 2"> Master Card<br>
-      <input type="radio" name="card_type" value="value 3"> American Express
-      <br>
-      
-      Credit Card Number:
-      <p id="cardWarning" style="display:none"> card number must be 16 numbers </p>
-      <input id="cardNumberField" type="text" name="credit_card" placeholder="Credit Card Number" onchange="checkCard(this)">
-      <br>
-      Credit Card Expiration:
-      <p id="cardDateWarning" style="display:none"> card expiration must have a valid month of 1-12 and not expired. <br>
-                                                    and be in the form "12/21/2018" </p>
-      <input id="cardExpirationField" type="text" name="exp_date" placeholder="expiration date" onchange="checkCardDate(this)">
-      <br>
-      
-      <br>
-      <!--<input type="reset" value="Reset">-->
        
-      <button id="resetButton" name="reset" type="button" onclick="resetEverything()">reset </button>
       <br>
       <br>
-      <button id="submitOrder" name="validate" type="button" onclick="validateEverything()">submit</button>
+      <button id="submitOrder" name="validate" type="submit">submit</button>
       
       </form>
    
