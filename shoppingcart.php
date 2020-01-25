@@ -8,8 +8,8 @@
    </head>
    <body>
    
-   <a href="directory.html">back to browsing page</a>
-   <a href="checkout.html">checkout</a>
+   <a href="browsingpage.php">back to browsing page</a>
+   <a href="checkout.php">checkout</a>
    
    
    <form id="salesForm" action="undefined">

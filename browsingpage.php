@@ -14,7 +14,7 @@ session_start();
    <body>
    
    <a href="directory.html">back to directory</a>
-   <a href="shoppingcart.html">view Shopping cart</a>
+   <a href="shoppingcart.php">view Shopping cart</a>
    
    <?php
    

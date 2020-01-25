@@ -8,6 +8,9 @@
    </head>
    <body>
    
+   <a href="shoppingcart.php">back to shoppingcart page</a>
+   <a href="confirmation.php">confirmation</a>
+   
    <form id="addressForm" action="undefined">
       
       <p id="blankWarning" style="display:none"> fields can not be left blank </p>
