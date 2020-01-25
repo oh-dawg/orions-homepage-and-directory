@@ -57,7 +57,7 @@ session_start();
          <tr>
             <td> Widget</td>
             <td> $10.00</td>
-            <td><input id="widget" type="text" name="widget" <?php $_SESSION["boughtWidgets"]= $_POST['widget'] echo "bought wigets" $boughtWidgets?> ></td>
+            <td><input id="widget" type="text" name="widget" <?php $_SESSION["boughtWidgets"]= $_POST['widget']?> ></td>
          </tr>
          <tr>
             <td>Gizmo</td>
