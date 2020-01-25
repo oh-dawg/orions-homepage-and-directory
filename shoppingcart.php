@@ -44,7 +44,9 @@
          <tr>
             <td> Widget</td>
             <td> $10.00</td>
-            <td><?php echo "widgets " . $_SESSION["boughtWidgets"] ?> </td>
+			<td> <?php echo $_SESSION["boughtWidgets"] ?> </td>
+			
+            <!-- <td> <?php echo "widgets " . $_SESSION["boughtWidgets"] ?> </td> -->
          </tr>
          <tr>
             <td>Gizmo</td>
