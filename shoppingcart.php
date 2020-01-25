@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +12,10 @@ session_start();
    
    </head>
    <body>
+   <?php
+   $_SESSION["boughtWidgets"] = $_POST['widget'];
+   ?>
+   
    
    <a href="browsingpage.php">back to browsing page</a>
    <a href="checkout.php">checkout</a>

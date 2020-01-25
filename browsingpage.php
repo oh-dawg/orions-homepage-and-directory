@@ -57,22 +57,22 @@ session_start();
          <tr>
             <td> Widget</td>
             <td> $10.00</td>
-            <td><input id="widget" type="text" name="widget" <?php $_SESSION["boughtWidgets"]= $_POST['widget']?> ></td>
+            <td><input id="widget" type="text" name="widget" <?php $_SESSION["boughtWidgets"]= $_POST['widget'];?> ></td>
          </tr>
          <tr>
             <td>Gizmo</td>
             <td> $15.00</td>
-            <td><input id="gizmo" type="text" name="gizmo" <?php $_SESSION["boughtGizmos"]= $_POST['gizmo']?> ></td>
+            <td><input id="gizmo" type="text" name="gizmo" <?php $_SESSION["boughtGizmos"]= $_POST['gizmo'];?> ></td>
          </tr>
          <tr>
             <td>whatzit</td>
             <td> $20.00</td>
-            <td><input id="whatzit" type="text" name="whatzit" <?php $_SESSION["boughtWhatzit"]= $_POST['whatzit']?> ></td>
+            <td><input id="whatzit" type="text" name="whatzit" <?php $_SESSION["boughtWhatzit"]= $_POST['whatzit'];?> ></td>
          </tr>
          <tr>
             <td>InfinDibulator</td>
             <td> $25.00</td>
-            <td><input id="infindibulator" type="text" name="infindibulator" <?php $_SESSION["boughtInfindibulator"]= $_POST['infindibulator']?> ></td>
+            <td><input id="infindibulator" type="text" name="infindibulator" <?php $_SESSION["boughtInfindibulator"]= $_POST['infindibulator'];?> ></td>
          </tr>
       </table>
       <br>
