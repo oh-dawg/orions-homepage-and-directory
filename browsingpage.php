@@ -54,7 +54,7 @@ session_start();
    }
    ?>
    
-   <div class="main">
+   <div class="main" align="center">
 		<form id="salesForm" method= "post" action="shoppingcart.php">
       
 			<br>

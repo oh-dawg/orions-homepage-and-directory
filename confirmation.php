@@ -57,7 +57,7 @@ session_start();
 		<br>
 	</div>
    
-   <div class="main">
+   <div class="main" align="center">
 		<p>First Name           <?php echo $_SESSION["firstName"];   ?> </p>
 		<p>Last Name            <?php echo $_SESSION["lastName"];      ?> </p>
 		<p>Address              <?php echo $_SESSION["address"];      ?> </p>

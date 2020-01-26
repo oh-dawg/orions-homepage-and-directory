@@ -53,7 +53,7 @@ session_start();
 		<a href="checkout.php">checkout</a>
    </div>
    
-   <div class="main">
+   <div class="main" align="center">
 		<form id="cartForm" method="post" action="checkout.php">
       
 			<br>

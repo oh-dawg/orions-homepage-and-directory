@@ -21,7 +21,7 @@
    
    </div>
    
-   <div class="main">
+   <div class="main" align="center">
    
    <figure class="myImage">
       <img src="photoOfMe.jpg" width="100%" height="100%">

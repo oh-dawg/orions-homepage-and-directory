@@ -61,7 +61,7 @@ session_start();
 		<a href="confirmation.php">confirmation</a>
 	</div>
    
-   <div class="main">
+   <div class="main" align="center">
 		<form id="checkoutForm" method="post" action="confirmation.php">
       
 			<p id="blankWarning" style="display:none"> fields can not be left blank </p>
