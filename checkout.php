@@ -29,9 +29,9 @@ session_start();
    
    if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	     
-    $_SESSION["boughtWidgets"] = test_input($_SESSION["boughtWidgets"]);
+    $_SESSION["boughtWidget"] = test_input($_SESSION["boughtWidget"]);
    
-    $_SESSION["boughtGizmos"] = test_input($_SESSION["boughtGizmos"]);
+    $_SESSION["boughtGizmo"] = test_input($_SESSION["boughtGizmo"]);
    
     $_SESSION["boughtWhatzit"] = test_input($_SESSION["boughtWhatzit"]);
    

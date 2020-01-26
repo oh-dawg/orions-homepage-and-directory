@@ -18,7 +18,7 @@ session_start();
    </div>
    
    <?php
-   $_SESSION["boughtWidgets"] = $_POST['widget'];
+   $_SESSION["boughtWidget"] = $_POST['widget'];
    $_SESSION["boughtGizmo"] = $_POST['gizmo'];
    $_SESSION["boughtWhatzit"] = $_POST['whatzit'];
    $_SESSION["boughtInfindibulator"] = $_POST['infindibulator'];
@@ -30,9 +30,9 @@ session_start();
    if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	   
 	   
-    $_SESSION["boughtWidgets"] = test_input($_SESSION["boughtWidgets"]);
+    $_SESSION["boughtWidget"] = test_input($_SESSION["boughtWidget"]);
    
-    $_SESSION["boughtGizmos"] = test_input($_SESSION["boughtGizmos"]);
+    $_SESSION["boughtGizmo"] = test_input($_SESSION["boughtGizmo"]);
    
     $_SESSION["boughtWhatzit"] = test_input($_SESSION["boughtWhatzit"]);
    
@@ -68,7 +68,7 @@ session_start();
 				<tr>
 					<td> Widget</td>
 					<td> $10.00</td>
-					<td> new item quantity? <input id="removeWidget" type="text" name="removeWidget" value="<?php echo $_SESSION["boughtWidgets"];?>"> </td>
+					<td> new item quantity? <input id="removeWidget" type="text" name="removeWidget" value="<?php echo $_SESSION["boughtWidget"];?>"> </td>
 			
 				</tr>
 				<tr>

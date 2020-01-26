@@ -21,8 +21,8 @@ session_start();
    
    <?php
    
-   $_SESSION["boughtWidgets"] = 0;
-   $_SESSION["boughtGizmos"] = 0;
+   $_SESSION["boughtWidget"] = 0;
+   $_SESSION["boughtGizmo"] = 0;
    $_SESSION["boughtWhatzit"] = 0;
    $_SESSION["boughtInfindibulator"] = 0;
    $_SESSION["firstName"] = "";
@@ -37,9 +37,9 @@ session_start();
    if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	   
 	   
-    $_SESSION["boughtWidgets"] = test_input($_SESSION["boughtWidgets"]);
+    $_SESSION["boughtWidget"] = test_input($_SESSION["boughtWidget"]);
    
-    $_SESSION["boughtGizmos"] = test_input($_SESSION["boughtGizmos"]);
+    $_SESSION["boughtGizmo"] = test_input($_SESSION["boughtGizmo"]);
    
     $_SESSION["boughtWhatzit"] = test_input($_SESSION["boughtWhatzit"]);
    

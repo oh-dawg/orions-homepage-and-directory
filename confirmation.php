@@ -25,9 +25,9 @@ session_start();
    
    if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	     
-    $_SESSION["boughtWidgets"] = test_input($_SESSION["boughtWidgets"]);
+    $_SESSION["boughtWidget"] = test_input($_SESSION["boughtWidget"]);
    
-    $_SESSION["boughtGizmos"] = test_input($_SESSION["boughtGizmos"]);
+    $_SESSION["boughtGizmo"] = test_input($_SESSION["boughtGizmo"]);
    
     $_SESSION["boughtWhatzit"] = test_input($_SESSION["boughtWhatzit"]);
    
@@ -63,7 +63,7 @@ session_start();
 		<p>Address              <?php echo $_SESSION["address"];      ?> </p>
 		<p>Phone Number         <?php echo $_SESSION["phoneNumber"];      ?> </p>
 		<p>Widgets              <?php echo $_SESSION["boughtWidgets"];      ?> </p>
-		<p>Gizmos               <?php echo $_SESSION["boughtGizmos"];      ?> </p>
+		<p>Gizmos               <?php echo $_SESSION["boughtGizmo"];      ?> </p>
 		<p>Whatzits             <?php echo $_SESSION["boughtWhatzit"];      ?> </p>
 		<p>Infindibulators      <?php echo $_SESSION["boughtInfindibulator"];      ?> </p>
 		
