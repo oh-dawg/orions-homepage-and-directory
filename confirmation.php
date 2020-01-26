@@ -21,6 +21,11 @@ session_start();
    
    ?>
    
+   <a href="shoppingcart.php">back to shoppingcart page</a>
+   <br>
+   <a href="confirmation.php">confirmation</a>
+   <br>
+   
    <p>First Name           <?php echo $_SESSION["firstName"];   ?> </p>
    <p>Last Name            <?php echo $_SESSION["lastName"];      ?> </p>
    <p>Address              <?php echo $_SESSION["address"];      ?> </p>
