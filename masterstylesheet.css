@@ -5,7 +5,7 @@ body {
 .main {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
   padding:20px;
-  text-align: center;
+  justify-content: center;
 }
 .main p:hover{
 	
