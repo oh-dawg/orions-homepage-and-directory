@@ -51,19 +51,23 @@ session_start();
    }
    ?>
    
-   <a href="shoppingcart.php">back to shoppingcart page</a>
-   <br>
-   <a href="confirmation.php">confirmation</a>
-   <br>
+   <div class="leftsidenav">
+		<a href="checkout.php">back to checkout page</a>
+		<br>
+		<br>
+	</div>
    
-   <p>First Name           <?php echo $_SESSION["firstName"];   ?> </p>
-   <p>Last Name            <?php echo $_SESSION["lastName"];      ?> </p>
-   <p>Address              <?php echo $_SESSION["address"];      ?> </p>
-   <p>Phone Number         <?php echo $_SESSION["phoneNumber"];      ?> </p>
-   <p>Widgets              <?php echo $_SESSION["boughtWidgets"];      ?> </p>
-   <p>Gizmos               <?php echo $_SESSION["boughtGizmos"];      ?> </p>
-   <p>Whatzits             <?php echo $_SESSION["boughtWhatzit"];      ?> </p>
-   <p>Infindibulators      <?php echo $_SESSION["boughtInfindibulator"];      ?> </p>
+   <div class="main">
+		<p>First Name           <?php echo $_SESSION["firstName"];   ?> </p>
+		<p>Last Name            <?php echo $_SESSION["lastName"];      ?> </p>
+		<p>Address              <?php echo $_SESSION["address"];      ?> </p>
+		<p>Phone Number         <?php echo $_SESSION["phoneNumber"];      ?> </p>
+		<p>Widgets              <?php echo $_SESSION["boughtWidgets"];      ?> </p>
+		<p>Gizmos               <?php echo $_SESSION["boughtGizmos"];      ?> </p>
+		<p>Whatzits             <?php echo $_SESSION["boughtWhatzit"];      ?> </p>
+		<p>Infindibulators      <?php echo $_SESSION["boughtInfindibulator"];      ?> </p>
+		
+	</div>
    
     </body>
 </html>

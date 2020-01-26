@@ -13,9 +13,11 @@ session_start();
    </head>
    <body>
    
+   <div class="leftsidenav">
    <a href="directory.html">back to directory</a>
    <br>
    <a href="shoppingcart.php">view Shopping cart</a>
+   </div>
    
    <?php
    
@@ -52,38 +54,40 @@ session_start();
    }
    ?>
    
-   <form id="salesForm" method= "post" action="shoppingcart.php">
+   <div class="main">
+		<form id="salesForm" method= "post" action="shoppingcart.php">
       
-      <br>
-      <br>
+			<br>
+			<br>
       
-      <table>
-         <tr>
-            <th> Item Name</th>
-            <th> Item Price</th>
-            <th> add item to checkout</th>
-         </tr>
-         <tr>
-            <td> Widget</td>
-            <td> $10.00</td>
-            <td><input id="widget" type="text" name="widget" ></td>
-         </tr>
-         <tr>
-            <td>Gizmo</td>
-            <td> $15.00</td>
-            <td><input id="gizmo" type="text" name="gizmo" ></td>
-         </tr>
-         <tr>
-            <td>whatzit</td>
-            <td> $20.00</td>
-            <td><input id="whatzit" type="text" name="whatzit" ></td>
-         </tr>
-         <tr>
-            <td>InfinDibulator</td>
-            <td> $25.00</td>
-            <td><input id="infindibulator" type="text" name="infindibulator" ></td>
-         </tr>
-      </table>
+			<table>
+				<tr>
+					<th> Item Name</th>
+					<th> Item Price</th>
+					<th> add item to checkout</th>
+				</tr>
+				<tr>
+					<td> Widget</td>
+					<td> $10.00</td>
+					<td><input id="widget" type="text" name="widget" ></td>
+				</tr>
+				<tr>
+					<td>Gizmo</td>
+					<td> $15.00</td>
+					<td><input id="gizmo" type="text" name="gizmo" ></td>
+				</tr>
+				<tr>
+					<td>whatzit</td>
+					<td> $20.00</td>
+					<td><input id="whatzit" type="text" name="whatzit" ></td>
+				</tr>
+				<tr>
+					<td>InfinDibulator</td>
+					<td> $25.00</td>
+					<td><input id="infindibulator" type="text" name="infindibulator" ></td>
+				</tr>
+			</table>
+
       <br>
        
       <br>
@@ -91,6 +95,7 @@ session_start();
       <button id="submitOrder" name="validate" type="submit">submit</button>
       
       </form>
+	</div>
    
    
       </body>
