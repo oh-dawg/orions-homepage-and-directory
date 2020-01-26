@@ -8,7 +8,7 @@ session_start();
    <head>
    <title>BrowsingPage</title>
    <link rel="stylesheet" type="text/css" href="masterstylesheet.css">
-   <script type="text/javascript" src="shoppingcartJavascript.js"></script>
+   <!--<script type="text/javascript" src="shoppingcartJavascript.js"></script>-->
    
    </head>
    <body>

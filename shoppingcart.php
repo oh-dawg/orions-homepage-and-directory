@@ -8,7 +8,7 @@ session_start();
    <head>
    <title>shoppingcart</title>
    <link rel="stylesheet" type="text/css" href="masterstylesheet.css">
-   <script type="text/javascript" src="shoppingcartJavascript.js"></script>
+   <!--<script type="text/javascript" src="shoppingcartJavascript.js"></script>-->
    
    </head>
    <body>
@@ -59,34 +59,30 @@ session_start();
          <tr>
             <td> Widget</td>
             <td> $10.00</td>
-			<td> <?php echo $_SESSION["boughtWidgets"] ?> </td>
 			<td> new item quantity? <input id="removeWidget" type="text" name="removeWidget" value="<?php echo $_SESSION["boughtWidgets"];?>"> </td>
 			
          </tr>
          <tr>
             <td>Gizmo</td>
             <td> $15.00</td>
-            <td><?php echo $_SESSION["boughtGizmo"] ?></td>
-			<td> new item quantity? <input id="removeGizmo" type="text" name="removeGizmo" > </td>
+			<td> new item quantity? <input id="removeGizmo" type="text" name="removeGizmo" value="<?php echo $_SESSION["boughtGizmo"];?>"> </td>
 			
          </tr>
          <tr>
             <td>whatzit</td>
             <td> $20.00</td>
-            <td><?php echo $_SESSION["boughtWhatzit"] ?></td>
-			<td> new item quantity? <input id="removeWhatzit" type="text" name="removeWhatzit" > </td>
+			<td> new item quantity? <input id="removeWhatzit" type="text" name="removeWhatzit" value="<?php echo $_SESSION["boughtWhatzit"];?>"> </td>
 			
          </tr>
          <tr>
             <td>InfinDibulator</td>
             <td> $25.00</td>
-            <td><?php echo $_SESSION["boughtInfindibulator"] ?></td>
-			<td> new item quantity? <input id="removeInfindibulator" type="text" name="removeInfindibulator" > </td>
+			<td> new item quantity? <input id="removeInfindibulator" type="text" name="removeInfindibulator" value="<?php echo $_SESSION["boughtInfindibulator"];?>"> </td>
          </tr>
       </table>
       <br>
       
-      <button id="submitOrder" name="validate" type="submit">submit</button>
+      <button id="submitCart" name="validateCart" type="submit">submit</button>
       
       </form>
    

@@ -8,7 +8,7 @@ session_start();
    <head>
    <title>checkout</title>
    <link rel="stylesheet" type="text/css" href="masterstylesheet.css">
-   <script type="text/javascript" src="shoppingcartJavascript.js"></script>
+   <!-- <script type="text/javascript" src="shoppingcartJavascript.js"></script>-->
    
    </head>
    <body>
@@ -41,8 +41,9 @@ session_start();
       Phone Number input:
       <p id="phoneWarning" style="display:none"> Phone number must be in the format of "123-123-1234" </p>
       
-	  <input id="phoneField" type="text" name="phone" placeholder="Phone Number" onchange="checkPhone(this)">
+	  <input id="phoneField" type="text" name="phone" placeholder="Phone Number">
 	  
+	  <button id="submitCheckout" name="validateCheckout" type="submit">submit</button>
 	  
    </form>
    
