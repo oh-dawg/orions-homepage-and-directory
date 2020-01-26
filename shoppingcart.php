@@ -12,16 +12,22 @@ session_start();
    
    </head>
    <body>
+   
    <?php
    $_SESSION["boughtWidgets"] = $_POST['widget'];
+   $_SESSION["boughtGizmo"] = $_POST['gizmo'];
+   $_SESSION["boughtWhatzit"] = $_POST['whatzit'];
+   $_SESSION["boughtInfindibulator"] = $_POST['infindibulator'];
+   
    ?>
    
    
    <a href="browsingpage.php">back to browsing page</a>
+   <br>
    <a href="checkout.php">checkout</a>
    
    
-   <form id="salesForm" action="undefined">
+   <form id="cartForm" method="post" action="checkout.php">
       
       <!--<p id="blankWarning" style="display:none"> fields can not be left blank </p>
       
@@ -54,53 +60,33 @@ session_start();
             <td> Widget</td>
             <td> $10.00</td>
 			<td> <?php echo $_SESSION["boughtWidgets"] ?> </td>
+			<td> new item quantity? <input id="removeWidget" type="text" name="removeWidget" value="<?php echo $_SESSION["boughtWidgets"];?>"> </td>
 			
          </tr>
          <tr>
             <td>Gizmo</td>
             <td> $15.00</td>
-            <td><input id="gizmo" type="checkbox" name="item_2" value="15" onclick="gizmoCost(this)"></td>
+            <td><?php echo $_SESSION["boughtGizmo"] ?></td>
+			<td> new item quantity? <input id="removeGizmo" type="text" name="removeGizmo" > </td>
+			
          </tr>
          <tr>
             <td>whatzit</td>
             <td> $20.00</td>
-            <td><input id="whatzit" type="checkbox" name="item_3" value="20" onclick="whatzitCost(this)"></td>
+            <td><?php echo $_SESSION["boughtWhatzit"] ?></td>
+			<td> new item quantity? <input id="removeWhatzit" type="text" name="removeWhatzit" > </td>
+			
          </tr>
          <tr>
             <td>InfinDibulator</td>
             <td> $25.00</td>
-            <td><input id="infindibulator" type="checkbox" name="item_4" value="25" onclick="infindibulatorCost(this)"></td>
+            <td><?php echo $_SESSION["boughtInfindibulator"] ?></td>
+			<td> new item quantity? <input id="removeInfindibulator" type="text" name="removeInfindibulator" > </td>
          </tr>
       </table>
       <br>
-      total:<br>
-      <input id="total" type="text" name="total" readonly onmouseover="total()">
-      <br>
-      <br>
-      Credit card input:
-      <br>
-      <input type="radio" name="card_type" value="value 1" checked> Visa<br>
-      <input type="radio" name="card_type" value="value 2"> Master Card<br>
-      <input type="radio" name="card_type" value="value 3"> American Express
-      <br>
       
-      Credit Card Number:
-      <p id="cardWarning" style="display:none"> card number must be 16 numbers </p>
-      <input id="cardNumberField" type="text" name="credit_card" placeholder="Credit Card Number" onchange="checkCard(this)">
-      <br>
-      Credit Card Expiration:
-      <p id="cardDateWarning" style="display:none"> card expiration must have a valid month of 1-12 and not expired. <br>
-                                                    and be in the form "12/21/2018" </p>
-      <input id="cardExpirationField" type="text" name="exp_date" placeholder="expiration date" onchange="checkCardDate(this)">
-      <br>
-      
-      <br>
-      <!--<input type="reset" value="Reset">-->
-       
-      <button id="resetButton" name="reset" type="button" onclick="resetEverything()">reset </button>
-      <br>
-      <br>
-      <button id="submitOrder" name="validate" type="button" onclick="validateEverything()">submit</button>
+      <button id="submitOrder" name="validate" type="submit">submit</button>
       
       </form>
    

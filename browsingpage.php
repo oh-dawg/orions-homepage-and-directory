@@ -14,6 +14,7 @@ session_start();
    <body>
    
    <a href="directory.html">back to directory</a>
+   <br>
    <a href="shoppingcart.php">view Shopping cart</a>
    
    <?php
@@ -22,6 +23,10 @@ session_start();
    $_SESSION["boughtGizmos"] = 0;
    $_SESSION["boughtWhatzit"] = 0;
    $_SESSION["boughtInfindibulator"] = 0;
+   $_SESSION["firstName"] = "";
+   $_SESSION["lastName"] = "";
+   $_SESSION["address"] = "";
+   $_SESSION["phoneNumber"] = 0;
    
    ?>
    
@@ -62,17 +67,17 @@ session_start();
          <tr>
             <td>Gizmo</td>
             <td> $15.00</td>
-            <td><input id="gizmo" type="text" name="gizmo" <?php $_SESSION["boughtGizmos"]= $_POST['gizmo'];?> ></td>
+            <td><input id="gizmo" type="text" name="gizmo" ></td>
          </tr>
          <tr>
             <td>whatzit</td>
             <td> $20.00</td>
-            <td><input id="whatzit" type="text" name="whatzit" <?php $_SESSION["boughtWhatzit"]= $_POST['whatzit'];?> ></td>
+            <td><input id="whatzit" type="text" name="whatzit" ></td>
          </tr>
          <tr>
             <td>InfinDibulator</td>
             <td> $25.00</td>
-            <td><input id="infindibulator" type="text" name="infindibulator" <?php $_SESSION["boughtInfindibulator"]= $_POST['infindibulator'];?> ></td>
+            <td><input id="infindibulator" type="text" name="infindibulator" ></td>
          </tr>
       </table>
       <br>
