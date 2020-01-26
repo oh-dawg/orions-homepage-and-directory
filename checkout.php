@@ -13,6 +13,8 @@ session_start();
    </head>
    <body>
    
+   <h2>checkout page </h2>
+   
    <?php
    $_SESSION["boughtWidgets"] = $_POST['removeWidget'];
    $_SESSION["boughtGizmo"] = $_POST['removeGizmo'];

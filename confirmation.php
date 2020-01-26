@@ -21,6 +21,36 @@ session_start();
    
    ?>
    
+   <?php
+   
+   if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	     
+    $_SESSION["boughtWidgets"] = test_input($_SESSION["boughtWidgets"]);
+   
+    $_SESSION["boughtGizmos"] = test_input($_SESSION["boughtGizmos"]);
+   
+    $_SESSION["boughtWhatzit"] = test_input($_SESSION["boughtWhatzit"]);
+   
+    $_SESSION["boughtInfindibulator"] = test_input($_SESSION["boughtInfindibulator"]);
+	
+	$_SESSION["firstName"] = test_input($_SESSION["firstName"]);
+	
+	$_SESSION["lastName"] = test_input($_SESSION["lastName"]);
+	
+	$_SESSION["address"] = test_input($_SESSION["address"]);
+	
+	$_SESSION["phoneNumber"] = test_input($_SESSION["phoneNumber"]);
+	
+   }
+   
+   function test_input($data) {
+   $data = trim($data);
+   $data = stripslashes($data);
+   $data = htmlspecialchars($data);
+   return $data;
+   }
+   ?>
+   
    <a href="shoppingcart.php">back to shoppingcart page</a>
    <br>
    <a href="confirmation.php">confirmation</a>

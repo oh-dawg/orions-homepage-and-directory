@@ -13,6 +13,8 @@ session_start();
    </head>
    <body>
    
+   <h2>shopping cart page </h2>
+   
    <?php
    $_SESSION["boughtWidgets"] = $_POST['widget'];
    $_SESSION["boughtGizmo"] = $_POST['gizmo'];
