@@ -1,0 +1,24 @@
+go to file system, right click myPC
+properties
+advanced system settings
+environment variables
+path
+highlight and edit
+add paths to bins and libs of heroku, postgreSQL etc etc
+
+to start everything up type heroku pg:psql
+
+to create the connection between databases 
+(in your file with the database)
+heroku git:remote -a
+
+to view all tables
+type \dt
+to look at a table
+select * from public.user;
+
+insert into public.user (fields) values('entered value');
+for multiple entries
+insert into public.user (field1, field2) values('value1', 'value2');
+
+insert into public.note (field [going to be id]) values(id);
