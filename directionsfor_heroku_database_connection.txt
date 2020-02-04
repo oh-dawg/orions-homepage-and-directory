@@ -25,3 +25,4 @@ insert into public.note (field [going to be id]) values(id);
 
 this command is important, but i cant remember how
 git push heroku master
+
