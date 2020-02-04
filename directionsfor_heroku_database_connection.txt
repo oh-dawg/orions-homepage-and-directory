@@ -23,6 +23,8 @@ insert into public.user (field1, field2) values('value1', 'value2');
 
 insert into public.note (field [going to be id]) values(id);
 
-this command is important, but i cant remember how
-git push heroku master
+in our git local clone, in command line, type git push heroku master 
+to push all the stuff to the heroku site.
 
+also to find your DB url also in the git local clone, in command line, type heroku config:get DATABASE_URL --app %app name% for example my app name was orions-homepage-and-directory
+so heroku config:get DATABASE_URL --app orions-homepage-and-directory
