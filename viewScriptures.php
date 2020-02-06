@@ -2,7 +2,7 @@
 require "dbaccess.php";
 $db = get_db();
 //SELECT id, book, chapter, verse, content FROM scriptureBD;
-$query = 'SELECT id, book, chapter, verse, content FROM scriptureBD';
+$query = 'SELECT id, book, chapter, verse, content FROM scriptures';
 $stmt = $db->prepare($query);
 $stmt->execute();
 $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
