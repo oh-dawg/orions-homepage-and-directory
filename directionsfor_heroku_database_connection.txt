@@ -31,6 +31,6 @@ so heroku config:get DATABASE_URL --app orions-homepage-and-directory
 
 for git commands 
 mod file, then type git status enter
-then git add 'file name'
+then git add file name including extension
 git pull 
 git push
