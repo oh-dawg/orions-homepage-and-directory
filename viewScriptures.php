@@ -17,6 +17,7 @@ $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	<div>
 		<h1>Scripture Resources</h1>
 		<ul>
+		
 			<?php
 			// Go through each result
 			foreach ($scriptures as $scripture)
