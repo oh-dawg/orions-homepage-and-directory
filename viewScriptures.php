@@ -1,4 +1,7 @@
 <?php
+
+ini_set('display_errors', 1);
+
 require ('dbConnect.php');
 $db = get_db();
 //SELECT id, book, chapter, verse, content FROM scriptureBD;

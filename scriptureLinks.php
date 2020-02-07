@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1);
+
 $scripture_id = htmlspecialchars($_GET['scripture_id']);
 require ('dbConnect.php');
 $db = get_db();
