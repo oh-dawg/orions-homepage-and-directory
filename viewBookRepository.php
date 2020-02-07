@@ -1,5 +1,5 @@
 <?php
-include ('dbAccess.php');
+require ('dbAccess.php');
 $db = get_db();
 //SELECT id, genre, title, purpose, description;
 
