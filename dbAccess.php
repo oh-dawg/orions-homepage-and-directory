@@ -1,6 +1,6 @@
 <?php
 ​
-function getdb {
+function getdb() {
 	
 	$db = NULL;
 ​
