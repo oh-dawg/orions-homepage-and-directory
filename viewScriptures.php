@@ -1,5 +1,5 @@
 <?php
-require "dbConnect.php";
+require ('dbConnect.php');
 $db = get_db();
 //SELECT id, book, chapter, verse, content FROM scriptureBD;
 $query = 'SELECT id, book, chapter, verse, content FROM scriptures';
