@@ -34,3 +34,4 @@ function get_db() {
 	
 	
 }
+?>
