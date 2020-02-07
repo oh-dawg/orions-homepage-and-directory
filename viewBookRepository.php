@@ -1,14 +1,4 @@
-<?php
-require ('dbAccess.php');
-$db = get_db();
-//SELECT id, genre, title, purpose, description;
 
-$query = 'SELECT id, genre, title, purpose, description FROM public.bookrepository';
-$stmt = $db->prepare($query);
-$stmt->execute();
-$books = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-?>
 <!DOCTYPE html>
 <html>
    <head>
@@ -38,22 +28,7 @@ $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		<h1>book Resources</h1>
 		<ul>
 		
-		<?php
 		
-		foreach ($books as $book)
-		{
-			
-			$id = $book['id'];
-			$genre = $book['genre'];
-			$title = $book['title'];
-			$purpose = $book['purpose'];
-			$description = $book['description'];
-			
-			echo "<li><p>$id - $genre - $title - $purpose - $description</p></li>";
-			
-		}
-		
-		?>
 		</ul>
 		
    <br>
