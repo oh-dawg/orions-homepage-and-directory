@@ -1,3 +1,7 @@
+<?php
+require ('dbAccess.php');
+
+?>
 <!DOCTYPE html>
 <html>
    <head>
@@ -22,7 +26,10 @@
    
    <div class="main" align="center">
    
-   <h1> My name is Orion Christensen.</h1>
+   <h1> book list.</h1>
+   
+		<h1>Scripture Resources</h1>
+		<ul>
    <br>
    
    </div>
