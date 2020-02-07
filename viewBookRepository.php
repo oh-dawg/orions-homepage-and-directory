@@ -54,6 +54,7 @@ $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		}
 		
 		?>
+		</ul>
 		
    <br>
    
