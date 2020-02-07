@@ -1,9 +1,8 @@
 <?php
 ini_set('display_errors', 1);
 ​
-function getdb() {
+function getdb {
 	
-	/*
 	$db = NULL;
 ​
 	try {
@@ -34,7 +33,6 @@ function getdb() {
 ​
 	return $db;
 	
-	*/
 	
 }
 ?>
