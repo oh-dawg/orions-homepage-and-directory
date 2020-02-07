@@ -3,7 +3,7 @@
 ini_set('display_errors', 1);
 
 require ('dbConnect.php');
-$db = get_db();
+$db = getdb();
 //SELECT id, book, chapter, verse, content FROM scriptureBD;
 $query = 'SELECT id, book, chapter, verse, content FROM scriptures';
 $stmt = $db->prepare($query);

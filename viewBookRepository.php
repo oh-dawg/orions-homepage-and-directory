@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 
 require ('dbAccess.php');
-$db = get_db();
+$db = getdb();
 //SELECT id, genre, title, purpose, description;
 
 $query = 'SELECT id, genre, title, purpose, description FROM public.bookrepository';
