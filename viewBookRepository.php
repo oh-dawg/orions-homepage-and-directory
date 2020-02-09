@@ -52,7 +52,7 @@ $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			$purpose = $book['purpose'];
 			$description = $book['description'];
 			
-			echo "<li><p>$id - $genre - $title - $purpose - $description</p></li>";
+			echo "<li><p><a href='viewWorldGenre.php?book_id=$id'>$id - $genre - $title - $purpose - $description</a></p></li>";
 			
 		}
 		
