@@ -1,12 +1,12 @@
 <?php
 
-if(isset($_get['book_id']))
+if(isset($_get['book_title']))
 {
 	
 	die("Error, book id not specified");
 	
 }
-$book_id = htmlspecialchars($_GET['book_id']);
+$book_title = htmlspecialchars($_GET['book_title']);
 
 ?>
 
@@ -17,7 +17,7 @@ $book_id = htmlspecialchars($_GET['book_id']);
 	<title> World Genre</title>
    </head>
    <body>
-   <h1> World Genre's for book id <?php echo $book_id ?></h1>
+   <h1> World Genre's for title <?php echo $book_title ?></h1>
    
    </body>
 </html>
