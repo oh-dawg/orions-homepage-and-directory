@@ -35,4 +35,4 @@ then git add file name including extension
 git pull 
 git push
 
-\d scriptures (to see what attributes your colmns have)
+\d scriptures (to see what attributes your columns have)

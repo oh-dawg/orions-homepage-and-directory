@@ -13,7 +13,7 @@ INSERT INTO scripture(book, chapter, verse, content)values ('Doctrine and Covena
 
 INSERT INTO scripture(book, chapter, verse, content)values ('Doctrine and Covenants', 93, 28, 'He that keepeth his commandments receiveth truth and light,');
 
-INSERT INTO scripture(book, chapter, verse, content)values ('Mosiah', 16, 9, 'He is the light and the life of the world; yea, a light that is endless,');
+INSERT INTO scriptures(book, chapter, verse, content)values ('Mosiah', 16, 9, 'He is the light and the life of the world; yea, a light that is endless,');
 
 CREATE USER ta_user WITH PASSWORD 'ta_pass';
 GRANT SELECT, INSERT, UPDATE ON scripture TO ta_user;

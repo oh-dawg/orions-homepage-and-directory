@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 $scripture_id = htmlspecialchars($_GET['scripture_id']);
 require ('dbConnect.php');
 $db = getdb();
-$stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE id = :id');
+$stmt = $db->prepare('SELECT book, chapter, verse, content FROM scripture WHERE id = :id');
 $stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
 $stmt->execute();
 $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);

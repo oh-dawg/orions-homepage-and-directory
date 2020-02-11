@@ -38,7 +38,7 @@ try
 	// Add the Scripture
 
 	// We do this by preparing the query with placeholder values
-	$query = 'INSERT INTO scriptures(book, chapter, verse, content) VALUES(:book, :chapter, :verse, :content)';
+	$query = 'INSERT INTO scripture(book, chapter, verse, content) VALUES(:book, :chapter, :verse, :content)';
 	$statement = $db->prepare($query);
 
 	// Now we bind the values to the placeholders. This does some nice things
@@ -51,7 +51,7 @@ try
 	$statement->execute();
 
 	// get the new id
-	$scriptureId = $db->lastInsertId("scriptures_id_seq");
+	$scriptureId = $db->lastInsertId("scripture_id_seq");
 
 	// Now go through each topic id in the list from the user's checkboxes
 	foreach ($topicIds as $topicId)
