@@ -35,32 +35,4 @@ then git add file name including extension
 git pull 
 git push
 
-<?php
-
-$book = $_POST['textBook'];
-$chapter = $_POST['txtChapter'];
-$verse = $_POST['txtVerse'];
-$content = $_POST['txtContent'];
-$topicsIds = $_POST['chkTopics'];
-
-require ("dbConnect.php");
-$db = get_db();
-
-try
-{
-	
-	$query = 'INSERT INTO scripture(book, chapter, verse, content) VALUES (:book, :chapter, :verse, :content)';
-	$statement = $db->prepare($query);
-	
-	$statement->bindValue(':book', $book);
-	$statement->bindValue(':chapter', $chapter);
-	$statement->bindValue(':verse',$verse);
-	$statement->bindValue(':content', $content);
-	
-	
-	
-}
-catch
-{
-	
-}
+\d scriptures (to see what attributes your colmns have)
