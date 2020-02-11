@@ -8,7 +8,7 @@
 ***********************************************************/
 
 require("dbConnect.php");
-$db = get_db();
+$db = getdb();
 
 ?>
 <!DOCTYPE html>

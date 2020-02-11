@@ -31,7 +31,7 @@ $topicIds = $_POST['chkTopics'];
 
 
 require("dbConnect.php");
-$db = get_db();
+$db = getdb();
 
 try
 {
