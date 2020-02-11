@@ -1,11 +1,11 @@
 <?php
 
 ini_set('display_errors', 1);
-
 require("dbConnect.php");
 $db = get_db();
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,21 +63,15 @@ try
 }
 catch (PDOException $ex)
 {
-	
 	echo "Error connecting to DB. Details: $ex";
-	die();
-}
-
-?>
-
+	die();}
+	
+	?>
 	<br />
-
-	<input type="submit" value="Add to Database" />
-
-</form>
-
-
-</div>
-
-</body>
-</html>
+	<input type="submit" 
+	value="Add to Database" 
+	/>
+	</form>
+	</div>
+	</body>
+	</html>
