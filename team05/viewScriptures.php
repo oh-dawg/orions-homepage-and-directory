@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 require ('dbConnect.php');
 $db = getdb();
 //SELECT id, book, chapter, verse, content FROM scriptureBD;
-$query = 'SELECT id, book, chapter, verse, content FROM scripture';
+$query = 'SELECT id, book, chapter, verse, content FROM scripturesOC';
 $stmt = $db->prepare($query);
 $stmt->execute();
 $scriptures = $stmt->fetchAll(PDO::FETCH_ASSOC);

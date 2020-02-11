@@ -1,17 +1,17 @@
-CREATE TABLE public.topic
+CREATE TABLE topicOC
 (
 	id SERIAL NOT NULL PRIMARY KEY,
 	name VARCHAR(100) NOT NULL
 );
 
-INSERT INTO topic (name) VALUES ('Faith');
-INSERT INTO topic (name) VALUES ('Sacrifice');
-INSERT INTO topic (name) VALUES ('Charity');
+INSERT INTO topicOC (name) VALUES ('Faith');
+INSERT INTO topicOC (name) VALUES ('Sacrifice');
+INSERT INTO topicOC (name) VALUES ('Charity');
 
-CREATE TABLE public.scripture_topic
+CREATE TABLE scripture_topicOC
 (
-	scriptureId int NOT NULL REFERENCES scriptures(id),
-	topicId int NOT NULL REFERENCES topic(id)
+	scriptureId int NOT NULL REFERENCES scripturesOC(id),
+	topicId int NOT NULL REFERENCES topicOC(id)
 );
 
 GRANT SELECT, INSERT, UPDATE ON topic TO ta_user;
