@@ -51,7 +51,7 @@ $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			$purpose = $book['purpose'];
 			$description = $book['description'];
 			
-			echo "<li><p><a href='viewWorldGenre.php?book_title=$title'>$id - $genre - $title - $purpose - $description</a></p></li>";
+			echo "<li><p><a href='viewWorldGenre.php?book_id=$id'>$id - $genre - $title - $purpose - $description</a></p></li>";
 			
 		}
 		
@@ -65,21 +65,21 @@ $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
    
    <div class = "edit_table" align = "center">
    
-	<form id="bookEntryForm" method= "post" action="insertBook.php">
+		<form id="bookEntryForm" method= "post" action="insertBook.php">
 	
-	<input type="text" id="txtGenre" name="txtGenre"></input>
-	<label for="txtGenre">Genre</label>
-	<br /><br />
+			<input type="text" id="txtGenre" name="txtGenre"></input>
+			<label for="txtGenre">Genre</label>
+			<br /><br />
 
-	<input type="text" id="txtTitle" name="txtTitle"></input>
-	<label for="txtTitle">Title</label>
-	<br /><br />
+			<input type="text" id="txtTitle" name="txtTitle"></input>
+			<label for="txtTitle">Title</label>
+			<br /><br />
 
-	<input type="text" id="txtPurpose" name="txtPurpose"></input>
-	<label for="txtPurpose">Purpose</label>
-	<br /><br />
+			<input type="text" id="txtPurpose" name="txtPurpose"></input>
+			<label for="txtPurpose">Purpose</label>
+			<br /><br />
 
-	<label for="txtDescription">Description:</label><br />
+			<label for="txtDescription">Description:</label><br />
 	<textarea id="txtDescription" name="txtDescription" rows="4" cols="50"></textarea>
 	<br /><br />
 	
