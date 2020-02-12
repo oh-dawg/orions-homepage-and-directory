@@ -25,9 +25,11 @@ $stmt = $db->prepare($query);
 // ':id' comes from the table, $book_id is the variable we named on line 13.
 $stmt->bindValue(':id', $book_id, PDO::PARAM_INT);
 $stmt->execute();
+
+// books_rows is a variable, assigne a associative array to it, places contents of table fetch into this array.
 $books_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$book_code = $books_rows[0]['genre'];
+//$book_code = $books_rows[0]['genre'];
 
 ?>
 
