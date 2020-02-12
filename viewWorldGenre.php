@@ -1,12 +1,12 @@
 <?php
-//ini_set('display_errors', 1);
+ini_set('display_errors', 1);
 
-if(isset($_get['book_title']))
+/*if(isset($_get['book_title']))
 {
 	
 	die("Error, book id not specified");
 	
-}
+}*/
 $book_title = htmlspecialchars($_GET['book_title']);
 
 require('dbAccess.php');
