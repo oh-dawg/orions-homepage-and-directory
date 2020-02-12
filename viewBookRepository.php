@@ -38,7 +38,6 @@ $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
    
    <h1> book list.</h1>
    
-		<h1>book Resources</h1>
 		<ul>
 		
 		<?php
