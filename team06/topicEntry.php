@@ -19,7 +19,7 @@ $db = getdb();
 <form id="mainForm" action="insertTopic.php" method="POST">
 
 	<input type="text" id="txtBook" name="txtBook"></input>
-	<label for="txtBooK">Book</label>
+	<label for="txtBook">Book</label>
 	<br /><br />
 
 	<input type="text" id="txtChapter" name="txtChapter"></input>
