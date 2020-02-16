@@ -36,6 +36,32 @@ $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
    
    <div class="main" align="center">
    
+   <div class = "edit_table" align = "center">
+   
+		<form id="bookEntryForm" method= "post" action="insertBook.php">
+	
+			<input type="text" id="txtGenre" name="txtGenre"></input>
+			<label for="txtGenre">Genre</label>
+			<br /><br />
+
+			<input type="text" id="txtTitle" name="txtTitle"></input>
+			<label for="txtTitle">Title</label>
+			<br /><br />
+
+			<input type="text" id="txtPurpose" name="txtPurpose"></input>
+			<label for="txtPurpose">Purpose</label>
+			<br /><br />
+
+			<label for="txtDescription">Description:</label><br />
+	<textarea id="txtDescription" name="txtDescription" rows="4" cols="50"></textarea>
+	<br /><br />
+	
+	<button id="submitRecord" name="validate" type="submit">submit</button>
+      
+      </form>
+	  
+	</div>
+   
    <h1> book list.</h1>
    
 		<ul>
@@ -87,8 +113,6 @@ $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
       
       </form>
 	</div>
-   
-   </div>
    
     </body>
 </html>
