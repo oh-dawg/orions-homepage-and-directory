@@ -21,7 +21,7 @@ $db = getdb();
 
 /*specify which table your pulling from using your alias as good practice*/
 
-$query = 'SELECT w.bookrepository_id, b.genre, b.title, w.worldgenre FROM worldgenretable w INNER JOIN bookrepository b on w.bookrepository_id = b.id WHERE id = :id';
+$query = 'SELECT w.bookrepository_id, b.genre, b.title, w.worldgenre FROM worldgenretable w INNER JOIN bookrepository b on w.bookrepository_id = b.id WHERE b.id = :id';
 $stmt = $db->prepare($query);
 //$stmt->bindValue(':id', $book_title, PDO::PARAM_STR);
 
