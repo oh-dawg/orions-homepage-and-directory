@@ -34,6 +34,7 @@ $books_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 //$book_code = $books_rows[0]['genre'];
 
+// fulfills line 49
 $book_code = $books_rows[0]['title'];
 
 ?>
