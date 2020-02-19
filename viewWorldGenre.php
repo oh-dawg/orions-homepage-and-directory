@@ -34,6 +34,8 @@ $books_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 //$book_code = $books_rows[0]['genre'];
 
+$book_code = $books_rows[0]['title'];
+
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +46,7 @@ $books_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
    </head>
    <body>
    
-   <h1> World Genres for title <?php echo $book_code; ?></h1>
+   <h1> World Genres for title <?php echo $book_code ?></h1>
    
    <ul>
    <?php
