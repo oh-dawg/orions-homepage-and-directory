@@ -15,9 +15,10 @@ try
 	// Add the Scripture
 
 	// We do this by preparing the query with placeholder values
-	$query = 'UPDATE public.bookrepository SET genre = ":genre", title = ":title", purpose = ":purpose", description = "updateDescription" WHERE id = "updateID"';
+	$query = 'UPDATE public.bookrepository SET genre = :genre, title = :title, purpose = :purpose, description = :description WHERE id = :id';
 	$statement = $db->prepare($query);
 	
+	$statement->bindValue(':id', $id);
 	$statement->bindValue(':genre', $genre);
 	$statement->bindValue(':title', $title);
 	$statement->bindValue(':purpose', $purpose);

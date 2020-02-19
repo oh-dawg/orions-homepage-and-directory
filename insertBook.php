@@ -17,6 +17,7 @@ try
 	$query = 'INSERT INTO public.bookrepository(genre, title, purpose, description) VALUES(:genre, :title, :purpose, :description)';
 	$statement = $db->prepare($query);
 	
+	// :genre = $genre;
 	$statement->bindValue(':genre', $genre);
 	$statement->bindValue(':title', $title);
 	$statement->bindValue(':purpose', $purpose);
