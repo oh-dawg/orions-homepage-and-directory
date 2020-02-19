@@ -36,6 +36,7 @@ $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
    
    <div class="main" align="center">
    
+   <h1> add record to table </h1>
    <div class = "edit_table" align = "center">
    
 		<form id="bookEntryForm" method= "post" action="insertBook.php">
@@ -53,13 +54,59 @@ $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			<br /><br />
 
 			<label for="txtDescription">Description:</label><br />
-	<textarea id="txtDescription" name="txtDescription" rows="4" cols="50"></textarea>
-	<br /><br />
+			<textarea id="txtDescription" name="txtDescription" rows="4" cols="50"></textarea>
+			<br /><br />
 	
-	<button id="submitRecord" name="validate" type="submit">submit</button>
+			<button id="submitRecord" name="validate" type="submit">submit</button>
       
-      </form>
+		</form>
 	  
+	</div>
+	
+	<h1> update record </h1>
+	<div class = "update_table" align = "center">
+	
+		<form id="bookUpdateForm" method= "post" action="updateBook.php">
+	
+			<input type="text" id="updateID" name="updateID"></input>
+				<label for="updateID">insert recordID to change record</label>
+				<br /><br />
+	
+			<input type="text" id="updateGenre" name="updateGenre"></input>
+				<label for="updateGenre">Genre change</label>
+				<br /><br />
+			
+			<input type="text" id="updateTitle" name="updateTitle"></input>
+				<label for="updateTitle">Title change</label>
+				<br /><br />
+			
+			<input type="text" id="updatePurpose" name="updatePurpose"></input>
+				<label for="updatePurpose">Purpose change</label>
+				<br /><br />
+			
+			<label for="updateDescription">Description change:</label><br />
+			<textarea id="updateDescription" name="updateDescription" rows="4" cols="50"></textarea>
+			<br /><br />
+	
+			<button id="submitRecord" name="validate" type="submit">submit</button>
+	
+		</form>
+	
+	</div>
+	
+   <h1> delete a record </h1>
+   
+   <div class = "delete_record" align = "center">
+	<form id="bookDeleteForm" method= "post" action="deleteBook.php">
+   
+		<input type="text" id="deleteID" name="deleteID"></input>
+			<label for="deleteID">insert recordID to delete a record</label>
+			<br /><br />
+			
+		<button id="submitRecord" name="validate" type="submit">submit</button>
+		
+	</form>
+	
 	</div>
    
    <h1> book list.</h1>
