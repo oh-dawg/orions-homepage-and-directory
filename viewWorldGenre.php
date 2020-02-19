@@ -18,7 +18,10 @@ $db = getdb();
 
 //$query = 'SELECT b.genre, w.worldgenre FROM worldgenretable w JOIN bookrepository b ON w.bookrepository_id = b.id WHERE b.id =:id';
 // query runs on the table, use table column names.
-$query = 'SELECT bookrepository_id, bookrepository_genre, bookrepository_title, worldgenre FROM worldgenretable WHERE id = :id';
+
+/*specify which table your pulling from using your alias as good practice*/
+
+$query = 'SELECT w.bookrepository_id, b.genre, b.title, w.worldgenre FROM worldgenretable w INNER JOIN bookrepository b on w.bookrepository_1d = b.id WHERE id = :id';
 $stmt = $db->prepare($query);
 //$stmt->bindValue(':id', $book_title, PDO::PARAM_STR);
 
