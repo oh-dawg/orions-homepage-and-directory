@@ -35,7 +35,7 @@ $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
    
    <div class="leftsidenav">
    
-   <a href="directory.html">directory</a>
+   <a href="viewBookRepository.php">book repository</a>
    
    </div>
    
