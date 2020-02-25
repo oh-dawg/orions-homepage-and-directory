@@ -11,7 +11,7 @@ try
 	// Add the Scripture
 
 	// We do this by preparing the query with placeholder values
-	$query = 'DELETE FROM public.bookrepository WHERE id = :id';
+	$query = 'DELETE FROM public.bookrepository WHERE id = :id ON DELETE CASCADE';
 	$statement = $db->prepare($query);
 	
 	$statement->bindValue(':id', $id);
