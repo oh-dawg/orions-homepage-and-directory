@@ -11,6 +11,12 @@ try
 	// Add the Scripture
 
 	// We do this by preparing the query with placeholder values
+	$wQuery = 'DELETE FROM public.worldGenreTable WHERE bookrepository_id = :id';
+	$wStatement = $db->prepare($wQuery);
+	$wStatement->bindValue(':id', $id);
+	$wStatement->execute();
+	
+	
 	$query = 'DELETE FROM public.bookrepository WHERE id = :id';
 	$statement = $db->prepare($query);
 	
